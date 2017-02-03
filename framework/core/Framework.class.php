@@ -21,7 +21,7 @@ class Framework
      */
     private static function init()
     {
-
+        echo getcwd();
     }
 
     /**
