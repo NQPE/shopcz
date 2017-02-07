@@ -1,12 +1,10 @@
 <?php
+//admin模型
+class AdminModel extends Model {
+    public function getAdmins() {
+        $sql = "SELECT * FROM {$this->table}";
+        return $this->db->getAll($sql);
+    }
 
-/**
- * Created by PhpStorm.
- * User: Levi
- * Date: 2017/2/3
- * Time: 18:02
- */
-class AdminModel
-{
 
 }
