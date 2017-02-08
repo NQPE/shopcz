@@ -44,7 +44,9 @@
                 <td width="10%">0</td>
                 <td width="10%"><?php echo $cat['unit'];?></td>
                 <td width="10%"><?php echo $cat['is_show'];?></td>
-                <td><span onclick="listTable.edit(this, 'edit_grade', 1)" title="点击修改内容" style="">5</span></td>
+                <td><span onclick="listTable.edit(this, 'edit_grade', 1)" title="点击修改内容" style="">
+                    <?php echo $cat['cat_desc'];?>
+                </span></td>
                 <td width="10%" align="right"><span onclick="listTable.edit(this, 'edit_sort_order', 1)" title="点击修改内容"
                                                     style=""><?php echo $cat['sort_order'];?></span></td>
                 <td width="24%" align="center">

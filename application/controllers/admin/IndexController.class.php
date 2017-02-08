@@ -1,6 +1,6 @@
 <?php
 //后台首页控制器
-class IndexController extends Controller{
+class IndexController extends BaseController{
     public function indexAction(){
 //         echo "admin...index...";
         // 载入视图
@@ -25,6 +25,7 @@ class IndexController extends Controller{
         $admins = $adminModel->getAdmins();
         echo "<pre>";
         var_dump($admins);
+        var_dump($_SESSION['admin']);
         include CUR_VIEW_PATH . "main.html";
     }
 

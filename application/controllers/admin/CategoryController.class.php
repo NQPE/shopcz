@@ -6,7 +6,7 @@
  * Date: 2017/2/7
  * Time: 14:42
  */
-class CategoryController extends Controller
+class CategoryController extends BaseController
 {
     //显示分类
     public function indexAction()
@@ -38,6 +38,8 @@ class CategoryController extends Controller
         $data['sort_order'] = trim($_POST['sort_order']);
         $data['cat_desc'] = trim($_POST['cat_desc']);
         $data['is_show'] = $_POST['is_show'];
+        //实体转义
+        $data['cat_desc']=htmlspecialchars($data['cat_desc']);
         //验证和处理
         if ($data['cat_name'] == '') {
             $this->jump("index.php?p=admin&c=category&a=add", "分类名称不能为空");
@@ -54,7 +56,7 @@ class CategoryController extends Controller
     //显示编辑分类页面
     public function editAction()
     {
-        $cat_id = $_GET['cat_id'] + 0;
+        $cat_id = $_GET['cat_id'] + 0;//保证安全
         //获取单个信息
         $categoryModel = new CategoryModel("category");
         $cats = $categoryModel->getCats();
@@ -73,6 +75,11 @@ class CategoryController extends Controller
         $data['cat_desc'] = trim($_POST['cat_desc']);
         $data['is_show'] = $_POST['is_show'];
         $data['cat_id'] = $_POST['cat_id'];
+        //实体转义
+//        $data['cat_desc']=htmlspecialchars($data['cat_desc']);
+        //引入辅助函数
+        $this->helper('input');
+        $data=deepspecialchars($data);
         //验证和处理
         if ($data['cat_name'] == '') {
             $this->jump("index.php?p=admin&c=category&a=add", "分类名称不能为空");
@@ -93,6 +100,18 @@ class CategoryController extends Controller
     //删除分类操作
     public function deleteAction()
     {
+        //得到需要删除的cat_id
+        $cat_id=$_GET['cat_id']+0;//保证安全
+        //需要判断被删除的类是否有后代子类 如果有 则提示错误信息
+        $categoryModel = new CategoryModel("category");
+        if(count($categoryModel->getSubIds($cat_id))>1){
+            $this->jump("index.php?p=admin&c=category&a=index", "当前分类有后代分类，不允许删除，请先删除子分类");
+        }
+        if($categoryModel->delete($cat_id)){
+            $this->jump('index.php?p=admin&c=category&a=index','删除分类成功',1);
+        }else{
+            $this->jump('index.php?p=admin&c=category&a=index','删除分类失败');
+        }
 
     }
 

@@ -1,0 +1,114 @@
+[2017-02-08 08:41:01] set names utf8
+[2017-02-08 08:41:01] DESC cz_admin
+[2017-02-08 08:41:01] SELECT * FROM cz_admin
+[2017-02-08 08:43:24] set names utf8
+[2017-02-08 08:43:24] DESC cz_admin
+[2017-02-08 08:43:24] SELECT * FROM cz_admin
+[2017-02-08 09:12:31] set names utf8
+[2017-02-08 09:12:31] DESC cz_admin
+[2017-02-08 09:12:31] SELECT * FROM cz_admin
+[2017-02-08 09:38:53] set names utf8
+[2017-02-08 09:38:53] DESC cz_admin
+[2017-02-08 09:38:53] SELECT * FROM cz_admin
+[2017-02-08 09:38:55] set names utf8
+[2017-02-08 09:38:55] DESC cz_category
+[2017-02-08 09:38:55] SELECT * FROM cz_category
+[2017-02-08 09:38:57] set names utf8
+[2017-02-08 09:38:57] DESC cz_goods_type
+[2017-02-08 09:38:57] SELECT * FROM cz_goods_type
+[2017-02-08 09:41:59] set names utf8
+[2017-02-08 09:41:59] DESC cz_goods_type
+[2017-02-08 09:42:00] INSERT INTO `cz_goods_type` (`type_name`) VALUES ('服装')
+[2017-02-08 09:42:01] set names utf8
+[2017-02-08 09:42:01] DESC cz_goods_type
+[2017-02-08 09:42:01] SELECT * FROM cz_goods_type
+[2017-02-08 10:59:33] set names utf8
+[2017-02-08 10:59:33] DESC cz_goods_type
+[2017-02-08 10:59:33] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 10:59:33] select count(*) from cz_goods_type
+[2017-02-08 11:00:20] set names utf8
+[2017-02-08 11:00:20] DESC cz_goods_type
+[2017-02-08 11:00:20] INSERT INTO `cz_goods_type` (`type_name`) VALUES ('食品')
+[2017-02-08 11:00:21] set names utf8
+[2017-02-08 11:00:21] DESC cz_goods_type
+[2017-02-08 11:00:21] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:00:21] select count(*) from cz_goods_type
+[2017-02-08 11:00:32] set names utf8
+[2017-02-08 11:00:32] DESC cz_goods_type
+[2017-02-08 11:00:32] INSERT INTO `cz_goods_type` (`type_name`) VALUES ('武器')
+[2017-02-08 11:00:33] set names utf8
+[2017-02-08 11:00:33] DESC cz_goods_type
+[2017-02-08 11:00:33] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:00:33] select count(*) from cz_goods_type
+[2017-02-08 11:00:36] set names utf8
+[2017-02-08 11:00:36] DESC cz_goods_type
+[2017-02-08 11:00:36] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 2,2
+[2017-02-08 11:00:36] select count(*) from cz_goods_type
+[2017-02-08 11:00:41] set names utf8
+[2017-02-08 11:00:41] DESC cz_goods_type
+[2017-02-08 11:00:41] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:00:41] select count(*) from cz_goods_type
+[2017-02-08 11:00:50] set names utf8
+[2017-02-08 11:00:50] DESC cz_goods_type
+[2017-02-08 11:00:50] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 2,2
+[2017-02-08 11:00:50] select count(*) from cz_goods_type
+[2017-02-08 11:00:51] set names utf8
+[2017-02-08 11:00:51] DESC cz_goods_type
+[2017-02-08 11:00:51] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:00:51] select count(*) from cz_goods_type
+[2017-02-08 11:00:57] set names utf8
+[2017-02-08 11:00:57] DESC cz_goods_type
+[2017-02-08 11:00:57] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 2,2
+[2017-02-08 11:00:57] select count(*) from cz_goods_type
+[2017-02-08 11:00:59] set names utf8
+[2017-02-08 11:00:59] DESC cz_goods_type
+[2017-02-08 11:00:59] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:00:59] select count(*) from cz_goods_type
+[2017-02-08 11:01:12] set names utf8
+[2017-02-08 11:01:12] DESC cz_goods_type
+[2017-02-08 11:01:12] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:01:12] select count(*) from cz_goods_type
+[2017-02-08 11:03:37] set names utf8
+[2017-02-08 11:03:37] DESC cz_goods_type
+[2017-02-08 11:03:37] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:03:37] select count(*) from cz_goods_type
+[2017-02-08 11:03:50] set names utf8
+[2017-02-08 11:03:50] DESC cz_goods_type
+[2017-02-08 11:03:50] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:03:50] select count(*) from cz_goods_type
+[2017-02-08 11:11:10] set names utf8
+[2017-02-08 11:11:10] DESC cz_admin
+[2017-02-08 11:11:10] SELECT * FROM cz_admin
+[2017-02-08 11:11:14] set names utf8
+[2017-02-08 11:11:14] DESC cz_goods_type
+[2017-02-08 11:11:14] SELECT * FROM cz_goods_type
+        ORDER BY type_id DESC
+        LIMIT 0,2
+[2017-02-08 11:11:14] select count(*) from cz_goods_type
+[2017-02-08 11:11:15] set names utf8
+[2017-02-08 11:11:15] DESC cz_goods_type
+[2017-02-08 11:11:15] select * from `cz_goods_type` where `type_id`=3

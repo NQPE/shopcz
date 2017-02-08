@@ -41,7 +41,8 @@ class CategoryModel extends Model
      * @return array
      */
     public function getSubIds($cat_id){
-        $cats=$this->getCats();
+        $sql = "SELECT * FROM {$this->table}";
+        $cats = $this->db->getAll($sql);
         $cats=$this->tree($cats,$cat_id);
         foreach($cats as $v){
             $cat_ids[]=$v['cat_id'];

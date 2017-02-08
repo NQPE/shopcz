@@ -51,6 +51,9 @@ class Framework
         include DB_PATH . "Mysql.class.php";
         //载入配置文件
         $GLOBALS['config'] = include CONFIG_PATH . "config.php";
+
+        //开启session
+        session_start();
     }
 
     /**
