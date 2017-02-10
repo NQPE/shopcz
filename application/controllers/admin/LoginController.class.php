@@ -26,8 +26,8 @@ class LoginController extends Controller
 //        $password=addslashes($password);
         //引入辅助函数
         $this->helper('input');
-        $username=deepaddslashes($username);
-        $password=deepaddslashes($password);
+        $username=deepslashes($username);
+        $password=deepslashes($password);
         //验证码
         $captcha = trim($_POST['captcha']);
         //验证信息

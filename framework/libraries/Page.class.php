@@ -31,6 +31,7 @@ class Page{
         foreach ($params as $k => $v) {
             $p[] = "$k=$v";
         }
+        //implode() 函数返回由数组元素组合成的字符串。
         $this->url = $script . '?' . implode('&', $p) . '&page=';
 
         $this->first = $this->getFirst();

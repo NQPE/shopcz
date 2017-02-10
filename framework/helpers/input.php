@@ -26,7 +26,7 @@ function deepspecialchars($data)
 }
 
 //批量 addslashes() 函数返回在预定义字符之前添加反斜杠的字符串。
-function deepaddslashes($data)
+function deepslashes($data)
 {
     if (empty($data)) {
         return $data;
@@ -42,12 +42,12 @@ function deepaddslashes($data)
 //        return htmlspecialchars($data);
 //    }
     //中高级程序员的写法
-    return is_array($data) ? array_map("deepaddslashes", $data) : addslashes($data);
+    return is_array($data) ? array_map("deepslashes", $data) : addslashes($data);
 }
 
 //批量 实体和单体转义处理
 function deephandlechars($data){
     $data=deepspecialchars($data);
-    $data=deepaddslashes($data);
+    $data=deepslashes($data);
     return $data;
 }
